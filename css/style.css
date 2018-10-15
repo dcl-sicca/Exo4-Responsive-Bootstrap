@@ -20,7 +20,7 @@ H1 {
 }
 
 article {
-    border:1px solid grey;
+    border:1px solid lightgrey;
     margin: auto;
     display: block;
     width: 400px;
@@ -46,13 +46,15 @@ article img {
 
 figure {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
-figure:nth-child(2)
-/* On prend le deuxième bloc élément */
-
+/* On prend le 4ème bloc élément */
+figure:nth-child(4)
 {
     background-color: blue;
     align-self: flex-end;
