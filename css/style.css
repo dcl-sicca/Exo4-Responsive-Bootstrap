@@ -1,20 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 H1 {
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 18px;
-}
-
-a {
-    font-size: 12px;
-}
-
-img {
-    width: 400px;
-    height: 265px;
 }
 
 .contener {
@@ -29,43 +20,58 @@ img {
 }
 
 article {
+    border:1px solid grey;
     margin: auto;
     display: block;
     width: 400px;
-    height: 365px;
+    height: 355px;
     -moz-box-shadow: 4px 4px 10px #888;
     -webkit-box-shadow: 4px 4px 10px #888;
     box-shadow: 4px 4px 6px #888;
 }
 
-figure {}
+article a {
+    font-size: 18px;
+}
 
-figcaption {
-    display: block;
-    font-family: 'Roboto', sans-serif;
+article ul {
+    display: flex;
+    list-style: none;
+}
+
+article img {
+    width: 400px;
+    height: 265px;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figure:nth-child(2)
+/* On prend le deuxième bloc élément */
+
+{
+    background-color: blue;
+    align-self: flex-end;
+    /* Seul ce bloc sera aligné à la fin */
 }
 
 
-/* article:nth-child(1) {
-    order: 6;
-}
-
-article:nth-child(2) {
-    order: 5;
-}
-
-article:nth-child(3) {
-    order: 4;
-}
-
-article:nth-child(4) {
+/* figure:nth-child(1) {
     order: 3;
 }
 
-article:nth-child(5) {
+figure:nth-child(2) {
     order: 2;
 }
 
-article:nth-child(6) {
+figure:nth-child(3) {
     order: 1;
 } */
+
+figcaption {
+    display: block;
+}
