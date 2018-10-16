@@ -5,17 +5,10 @@
 }
 
 H1 {
-<<<<<<< HEAD
-    font-size: 18em;
+    font-size: 1em;
 }
 
-.body {
-=======
-    font-size: 18px;
-}
-
-.contener {
->>>>>>> 5f9fa90e4812c747aaca3f60239501c5da91dc41
+body {
     z-index: 1;
     width: 100%;
     height: 760px;
@@ -27,23 +20,20 @@ H1 {
 }
 
 article {
-    border:1px solid lightgrey;
-    margin: auto;
+    border: 1px solid lightgray;
+    /* margin: auto; */
     display: block;
     width: 400px;
     height: 355px;
-<<<<<<< HEAD
     max-width: 400px;
     max-height: 355px;
-=======
->>>>>>> 5f9fa90e4812c747aaca3f60239501c5da91dc41
     -moz-box-shadow: 4px 4px 10px #888;
     -webkit-box-shadow: 4px 4px 10px #888;
     box-shadow: 4px 4px 6px #888;
 }
 
 article a {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 article ul {
@@ -56,49 +46,19 @@ article img {
     height: 265px;
 }
 
-<<<<<<< HEAD
 figcaption {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-
-/* On prend le deuxième bloc élément */
-
-figcaption:nth-child(3) {
-=======
-figure {
+.card-title {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    
+    justify-content: space-between;
+    background-color: chartreuse;
+    width: 100%;
 }
 
-/* On prend le 4ème bloc élément */
-figure:nth-child(4)
-{
->>>>>>> 5f9fa90e4812c747aaca3f60239501c5da91dc41
-    background-color: blue;
-    align-self: flex-end;
-    /* Seul ce bloc sera aligné à la fin */
-}
-
-
-/* figure:nth-child(1) {
-    order: 3;
-}
-
-figure:nth-child(2) {
-    order: 2;
-}
-
-figure:nth-child(3) {
-    order: 1;
-} */
-
-figcaption {
-    display: block;
+.link {
+    background-color: darkorange;
 }
