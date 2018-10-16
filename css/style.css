@@ -4,29 +4,97 @@
     font-family: 'Roboto', sans-serif;
 }
 
-H1 {
-    font-size: 1em;
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+        background-color: black;
+    }
 }
 
 body {
     z-index: 1;
     width: 100%;
-    height: 760px;
+    height: 900px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* align-items: center; */
+    align-items: center;
+}
+
+H1 {
+    font-size: 1, 5em;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
 }
 
 article {
     border: 1px solid lightgray;
     /* margin: auto; */
     display: block;
-    width: 400px;
-    height: 355px;
-    max-width: 400px;
-    max-height: 355px;
+    /* max-width: 500px;
+    max-height: 455px; */
     -moz-box-shadow: 4px 4px 10px #888;
     -webkit-box-shadow: 4px 4px 10px #888;
     box-shadow: 4px 4px 6px #888;
@@ -41,24 +109,28 @@ article ul {
     list-style: none;
 }
 
-article img {
-    width: 400px;
-    height: 265px;
+figcaption {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: rgb(255, 0, 106); */
+    width: 355px;
+    height: 60px;
 }
 
-figcaption {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+article img {
+    width: 500px;
+    height: 325px;
+    /* min-width: 300px;
+    min-height: 255px; 
+    max-width: 500px;
+    max-height: 455px;*/
 }
 
 .card-title {
     display: flex;
     justify-content: space-between;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     width: 100%;
-}
-
-.link {
-    background-color: darkorange;
 }
