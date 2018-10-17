@@ -4,65 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
-/* For desktop: */
-
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-@media only screen and (max-width: 1024px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-        background-color: black;
-    }
-}
-
 body {
     z-index: 1;
     width: 100%;
@@ -91,10 +32,10 @@ a:hover {
 
 article {
     border: 1px solid lightgray;
-    /* margin: auto; */
+    width: 30%;
+    padding: 1% 1% 0 1%;
+    margin: 0, 5%;
     display: block;
-    /* max-width: 500px;
-    max-height: 455px; */
     -moz-box-shadow: 4px 4px 10px #888;
     -webkit-box-shadow: 4px 4px 10px #888;
     box-shadow: 4px 4px 6px #888;
@@ -102,6 +43,7 @@ article {
 
 article a {
     font-size: 1em;
+    background-color: white;
 }
 
 article ul {
@@ -109,23 +51,33 @@ article ul {
     list-style: none;
 }
 
+figure {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    min-width: 80%;
+    min-height: 80%;
+}
+
 figcaption {
+    background-color: white;
     margin: 20px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* background-color: rgb(255, 0, 106); */
-    width: 355px;
-    height: 60px;
+    /* width: 355px;
+    height: 60px; */
 }
 
 article img {
-    width: 500px;
-    height: 325px;
-    /* min-width: 300px;
-    min-height: 255px; 
-    max-width: 500px;
-    max-height: 455px;*/
+    /* width: 500px;
+    height: 325px; */
+    /* max-width: 100%;
+    max-height: 70%; */
+    width: 100%;
+    height: 70%;
+    min-width: 70%;
+    min-height: 40%;
 }
 
 .card-title {
@@ -133,4 +85,10 @@ article img {
     justify-content: space-between;
     /* background-color: chartreuse; */
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
 }
